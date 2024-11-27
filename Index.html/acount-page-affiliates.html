@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Филиалы</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.mypanel.link/7cv4an/e71l3n45y7g1m9i8.ico" />
+    <script src="https://kit.fontawesome.com/edc2caccf4.js" crossorigin="anonymous" defer></script>
+</head>
+<style>
+@media(max-width:1200px) {
+.container{
+max-width:1100px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+.app-content{
+transform:translateX(-120px);
+width:100vw;
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+}
+
+
+@media(max-width:1100px) {
+.container{
+max-width:1000px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+.app-content{
+transform:translateX(-220px);
+width:120vw;
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+}
+
+
+@media(max-width:1000px) {
+.container{
+max-width:900px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+.app-content{
+transform:translateX(-210px);
+max-width:80vw;
+}
+
+.dropdown-toggle{
+transform:translateX(-10vw);
+}
+.dropdown-transperent{
+transform:translate(-20vw,-10px);
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+}
+
+
+@media(max-width:900px) {
+.container{
+max-width:800px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+html .app-content{
+transform:translateX(-200px);
+max-width:80vw;
+}
+.dropdown-toggle{
+transform:translateX(-20vw);
+}
+.dropdown-transperent{
+transform:translate(-35vw,-20px);
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+}
+
+@media(max-width:800px) {
+.container{
+max-width:700px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+html .app-content{
+transform:translateX(-200px);
+max-width:80vw;
+}
+
+.dropdown-toggle{
+transform:translateX(-35vw);
+}
+.dropdown-transperent{
+transform:translate(-50vw,-20px);
+}
+
+
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+
+}
+
+@media(max-width:700px) {
+.container{
+max-width:600px;
+
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+html .app-content{
+transform:translateX(-250px);
+max-width:100vw;
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-60vw);
+}
+.dropdown-transperent{
+transform:translate(-75vw,-20px);
+}
+
+}
+
+
+@media(max-width:600px) {
+.container{
+max-width:500px;
+}
+
+#menu{
+display:none;
+position:relative;
+left:40px;
+}
+
+html .app-content{
+transform:translateX(-250px);
+max-width:100vw;
+}
+
+html #menu-btn {
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-95vw);
+}
+.dropdown-transperent{
+transform:translate(-120vw,-20px);
+}
+
+}
+
+
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.container{
+
+}
+
+
+html,body{
+background:black;
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+header{
+width:250px;
+height:900px;
+position:relative;
+left:-55px;
+}
+
+#menu{
+width:250px;
+height:900px;
+background:#2b2b2b;
+
+}
+
+.username{
+color:white;
+border:2px solid green;
+width:200px;
+height:100px;
+border-radius:20px;
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+top:50px;
+left:2vw;
+background:#2b2b2b;
+transition:0.5s;
+}
+
+.username:hover{
+background:#2b2b2b;
+width:210px;
+height:110px;
+}
+
+.username i{
+align-items:center;
+justify-content:center;
+display:flex;
+font-size:50px;
+position:relative;
+left:5px;
+}
+.username a{
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+bottom:10px;
+left:20px;
+}
+
+.username h3{
+align-items:center;
+justify-content:center;
+display:flex;
+top:20px;
+left:-50px;
+position:relative;
+}
+
+.menu{
+position:relative;
+top:50px;
+
+}
+.naw-item{
+border:2px solid #2b2b2b;
+color:white;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+.naw-item-ready{
+border:2px solid #2b2b2b;
+color:green;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+border:2px solid black;
+border-radius:10px;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+
+.naw-item-ready i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item:hover{
+border:2px solid black;
+border-radius:10px;
+color:green;
+}
+
+.header-line{
+height:2px;
+position:relative;
+background:black;
+top:70px;
+}
+
+.app-content{
+overflow-y:scroll;
+color:white;
+position:relative;
+top:-800px;
+width:1000px;
+left:260px;
+height:500px;
+}
+
+
+.dropdown-menu{
+height:120px;
+width:200px;
+}
+
+.dropdown-menu a{
+
+}
+
+.dropdown-toggle{
+position:absolute;
+top:30px;
+left:900px;
+}
+
+.dropdown-transperent{
+position:absolute;
+left:900px;
+top:0px;
+}
+
+#menu-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+ position:relative;
+ top:-900px;
+ left:195px;
+}
+
+{
+background:yellow;
+}
+
+</style>
+
+<script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer="defer"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/lsjup49mte5nepob.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/ajlbwitc50c42y7n.css">
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/libs/bootstrap-datetimepicker/4.17.47/bootstrap-datetimepicker.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/css/font-awesome/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/global/29sz1jwqs2y1tscl.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
+<body>
+<div class="container">
+
+  <header>
+	  <div id="menu" class="menu-hidden">
+ <div class="username">
+<i class="fa-solid fa-user"></i>
+     <a>username</a>
+     <h3>0.00$</h3>
+ </div>
+    <div class="header-line"></div>
+<div class="menu">
+<a class="naw-item-ready" href="http://localhost:63342/Index.html/acount-page-affiliates.html"><i class="fa-solid fa-users"></i>Филиалы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/Account-page.html"><i class="fa-regular fa-clipboard"></i>Новые заказы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-servece.html"><i class="fa-solid fa-tags"></i>Услуги</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/account-page%20orders.html?_ijt=rbuirbrcnpeh86t150voe074lj&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-bag-shopping"></i>Заказы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-funds.html?_ijt=j8cibuih3kjo8cjumdmctg7s01&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-wallet"></i>Пополнить счет</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-tickets.html?_ijt=hsjdvfmmqq6512hgm1p69e2j5g&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-check-to-slot"></i>Квитанции</a>
+</div>
+	  </div>
+</header>
+    <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+          <button type="button" class="dropdown-toggle dd-top dd-orange" data-toggle="dropdown">
+                     <i class="fal fa-chevron-circle-down"></i>
+                     </button>
+			 <div class="dropdown-transperent">
+                     <div class="dropdown-menu menu-dd">
+                       <a href="http://localhost:63342/Index.html/account-page-terms-of-use.html" class="dropdown-item">
+                        <i class="fal fa-file-alt mr-2"></i>Условия </a>
+                       <a href="http://localhost:63342/Index.html/Acount-page-main.html" class="dropdown-item">
+                        <i class="fal fa-user mr-2"></i>Аккаунт </a>
+                       <a href="http://localhost:63342/Index.html/index.html?_ijt=2g6mfr0ppajb4eq84cj3488s80&_ij_reload=RELOAD_ON_SAVE" class="dropdown-item">
+                        <i class="fal fa-power-off mr-2"></i>Выйти </a>
+                     </div>
+                  </div>
+</div>
+               <!-- row -->
+         <!-- header -->
+
+
+<!-- Main variables *content* -->
+
+        <div id="main" class="app-content">
+			<div class="container-fluid">
+
+
+				<section class="app-affiliates">
+
+						<div class="row">
+							<div class="col-lg-6 col-12 mb-3 mb-lg-0">
+								<div class="d-card mb-3">
+									<div class="d-card-body">
+										<div class="ref-items ri-sm">
+										   <div class="ref-item">
+											  <div class="row">
+												 <div class="col-md-4 col-12 hlight-first align-self-center">
+													Обратная ссылка
+												 </div>
+												 <div class="col-md-8 col-12 hlight-second align-self-center">
+													https://thetopfame.com/ref/r5lnp
+												 </div>
+											  </div>
+										   </div>
+										   <!-- item end -->
+										   <div class="ref-item">
+											  <div class="row">
+												 <div class="col-md-4 col-12 hlight-first align-self-center">
+													Комиссионная ставка
+												 </div>
+												 <div class="col-md-8 col-12 hlight-second align-self-center">
+													30%
+												 </div>
+											  </div>
+										   </div>
+										   <!-- item end -->
+										   <div class="ref-item">
+											  <div class="row">
+												 <div class="col-md-4 col-12 hlight-first align-self-center">
+													Минимальная выплата
+												 </div>
+												 <div class="col-md-8 col-12 hlight-second align-self-center">
+													$10.00
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item">
+											  <div class="row">
+												 <div class="col align-self-center text-style-2">
+													Вышеуказанная сумма платежа и тарифы определяются вашим родителем. Мы оставляем за собой право на внесение изменений, когда сочтем это необходимым.
+												 </div>
+											  </div>
+										   </div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-card">
+									<div class="d-card-body">
+										<div class="ref-items ri-sm">
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-mouse-pointer"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Посещений
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													0
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-lightbulb-dollar"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Регистраций
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													0
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-hand-holding-usd"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Перенаправлений
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													0
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-redo-alt"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Коэффициент пересчета
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													0.00%
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-coins"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Всего заработано
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													$0.00
+												 </div>
+											  </div>
+										   </div>
+										   <div class="ref-item d-blue mb-2">
+											  <div class="row">
+												 <div class="col-md-1 col-1 align-self-center icon">
+													<i class="fal fa-clock"></i>
+												 </div>
+												 <div class="col-md-9 col-8 align-self-center">
+													Доступно
+												 </div>
+												 <div class="col-md-2 col-2 hlight-second align-self-center text-right">
+													$0.00
+												 </div>
+											  </div>
+										   </div>
+										   										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-12">
+								<div class="d-card pt-3">
+									<div class="d-card-head">
+										<div class="dch-icon">
+											<i class="fal fa-people-arrows"></i>
+										</div>
+										Партнерская система
+									</div>
+									<div class="d-card-body">
+<p>Справочная система, в которой 30% от суммы сбора платят люди, которые регистрируются на thetopfame.com с вашей ссылочной ссылкой, привязанной к вашей учетной записи для всех транзакций по пополнению баланса.
+
+<p>Помните, что вы получите бонус только от тех участников, которые зарегистрируются по ссылке, указанной в вашем аккаунте, ограничений по приглашениям нет!</p>
+
+<ul>
+<li>Оплата производится только для вновь набранных пользователей, те, кто ссылается на себя, не оплачиваются, и когда их замечают, их аккаунты на сайте закрываются.</li>
+<li>Вы не можете отправить запрос, не заработав $10,00 по ссылке.</li>
+<li>Вы получаете бонус в размере 30% от каждого платежа, который совершают ваши рефералы.</li>
+<li>Когда минимальная сумма платежа будет достигнута, на экране появится кнопка "Отправить запрос на платеж".</li>
+</ul>
+</div>
+</div>
+														</div>
+                        </div>
+				</section>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+	if ($('#pnd-slide').length) {
+		$('#pnd-slide').owlCarousel({
+			loop:true,
+			nav:false,
+  			dots: false,
+			smartSpeed: 500,
+			autoplay: 5000,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:1
+				},
+				1024:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			}
+		});
+	}
+</script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <script type="text/javascript" src="https://cdn.mypanel.link/libs/jquery/1.12.4/jquery.min.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/y36ux7zr5qki5pqw.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/sa2eqd3a988sw7ft.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/diotd59ww05fccop.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/tq6tyf6s2kgijr9z.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/el4nk521gysp8sw1.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/hukamq9jlwgb9dae.js">
+      </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":3,"auth":1,"live":true,"csrftoken":"XynLbuEN8q64SrHyzHgosRcVbRC_mbBPmXl-awDhe344TYcpgjXCz_Z7-L71SliCJHwFKNfb5HfGFA04SYMcFw=="};   </script>
+  <script type="text/javascript" >
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+  <!--script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<-- mz -->
+  <script>
+   //mz
+  let mz_ch = document.getElementById("orderform-category");
+if(mz_ch !== null) {
+    const mz_1 = Array.from(mz_ch.options);
+const mz_i = [
+    [9, "tiktok", "https://cdn.mypanel.link/7cv4an/eslcgfsgwhch3hw4.png"],
+    [11, "spotify", "https://cdn.mypanel.link/7cv4an/oun78cu80pz0u1op.png"],
+    [10, "facebook", "https://cdn.mypanel.link/7cv4an/bfu3ctaxwuwtsyhb.png"],
+    [12, "youtube", "https://cdn.mypanel.link/7cv4an/j6h906ce58wp7m41.png"],
+    [13, "twitter", "https://cdn.mypanel.link/7cv4an/jgpgcxpikfgnd7lg.png"],
+    [14, "soundcloud", "https://cdn.mypanel.link/7cv4an/6rqsui3mfcnxwh3g.png"],
+    [17, "telegram", "https://cdn.mypanel.link/7cv4an/174ppz783k4zuf54.png"],
+    [18, "snapchat", "https://cdn.mypanel.link/7cv4an/tepcykc2wcujus2f.png"],
+    [134, "onlyfans", "https://cdn.mypanel.link/7cv4an/n48sa1y2gmm9uk7p.png"],
+    [138, "linkedin", "https://cdn.mypanel.link/7cv4an/yboxko94yind8e9d.png"],
+    [139, "reddit", "https://cdn.mypanel.link/7cv4an/cmtjc5c7j43hbxoa.png"],
+    [140, "twitch", "https://cdn.mypanel.link/7cv4an/3xod0xr1pyjbnn5x.png"],
+    [137, "discord", "https://cdn.mypanel.link/7cv4an/0gz0zq1p42z7q8i3.png"],
+    [25, "tidal", "https://cdn.mypanel.link/7cv4an/iumu7d6yz2g7pejf.jpg"],
+    [649, "rumble", "https://cdn.mypanel.link/7cv4an/d3ieliwmze61rj83.png"],
+    [135, "clubhouse", "https://cdn.mypanel.link/7cv4an/f1pznmxh12zk7uk4.png"],
+]
+const mz_2 = document.createElement("div");
+mz_2.setAttribute("tabindex", "1")
+mz_2.classList.add("mz")
+mz_2.innerHTML = `
+<div id="mz_v" tabindex="1">💓Instagram Likes</div>
+<div id="mz_w"></div>
+`;
+mz_2.querySelector("#mz_v").addEventListener("click", () => {
+    mz_2.classList.toggle("active");
+})
+mz_1.forEach((opt, index) => {
+    let j = document.createElement("span");
+    let k = mz_i.find(a => a[0] == opt.value);
+    if(k) {
+    j.innerHTML = `<img src="${k.at(-1)}" />${opt.textContent}`;
+    }
+    else {
+        j.innerHTML = opt.textContent;
+    }
+    j.dataset.value = opt.getAttribute("value");
+    mz_2.querySelector("#mz_w").append(j);
+
+    document.querySelector("#order-form > div.form-group.mb-4.mt-1").append(mz_2);
+    j.addEventListener("click", () => {
+        mz_2.querySelector("#mz_v").innerHTML = j.innerHTML;
+        let prev_one = mz_ch.querySelector("[selected]");
+        if(prev_one) {
+            prev_one.removeAttribute("selected");
+        }
+        opt.setAttribute("selected", true);
+        mz_2.classList.remove("active");
+        mz_ch.selectedIndex = index;
+
+      try {
+        $("#orderform-category").trigger("change");
+      }
+      catch(e) {
+        customModule.siteOrder.updateDescription()
+      }
+    })
+});
+
+mz_ch.selectedIndex = 0;
+$("#orderform-service").on("change", ()=>{
+customModule.siteOrder.updateDescription()
+})
+}
+
+let mz_sd = document.querySelector(".app-sidebar")
+if(mz_sd !==null) {
+    let style = window.getComputedStyle(mz_sd),
+    left = style.getPropertyValue('left');
+    console.log(left)
+    mz_sd.style.left = left;
+}
+
+const mz_p_checker = document.querySelector(".pnd-brands b");
+if(mz_p_checker) {
+const mz_pn = Array.from(document.querySelectorAll(".pnd-brands b"));
+let switch_timelines = null;
+let mz_index = 1;
+
+switch_timelines = setInterval(() => {
+    if(mz_index > (mz_pn.length - 1)) mz_index = 0;
+    let p = document.querySelector("b.is-visible");
+    if(p) {
+        p.classList.remove("is-visible");
+    }
+    mz_pn[mz_index].classList.add("is-visible");
+    mz_index++;
+}, 5000)
+}
+  </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script-->
+
+
+  <!--prime:1cab6a50-->
+  <script>
+    $(document).ready(function () {
+  document.querySelector("#fields > #order_link").classList.remove("hidden");
+      document.querySelector("#fields > #order_quantity").classList.remove("hidden");
+      document.querySelector("#dripfeed > #order_check").classList.remove("hidden");
+    });
+</script>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const main = document.getElementById('main');
+menuBtn.addEventListener('click', function() {
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    main.style.display = 'block';
+  } else {
+    menu.style.display = 'block';
+    main.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

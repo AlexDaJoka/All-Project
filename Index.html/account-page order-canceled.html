@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.mypanel.link/7cv4an/e71l3n45y7g1m9i8.ico" />
+    <script src="https://kit.fontawesome.com/edc2caccf4.js" crossorigin="anonymous" defer></script>
+</head>
+<style>
+@media(max-width:1200px) {
+.container{
+max-width:1100px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+
+}
+
+@media(max-width:1000px) {
+.container{
+max-width:900px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-10vw);
+}
+.dropdown-transperent{
+transform:translate(-25vw,-40px);
+}
+
+
+}
+
+@media(max-width:850px) {
+.container{
+max-width:730px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-30vw);
+}
+.dropdown-transperent{
+transform:translate(-45vw,-40px);
+}
+
+
+}
+
+
+@media(max-width:730px) {
+.container{
+max-width:630px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:7vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-50vw);
+}
+.dropdown-transperent{
+transform:translate(-65vw,-40px);
+}
+
+
+}
+
+@media(max-width:630px) {
+.container{
+max-width:500px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:7vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-90vw);
+}
+.dropdown-transperent{
+transform:translate(-115vw,-40px);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.container{
+
+}
+
+
+html,body{
+background:black;
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+header{
+width:250px;
+height:900px;
+position:relative;
+}
+
+
+#menu{
+width:250px;
+height:900px;
+background:#2b2b2b;
+position:relative;
+
+}
+
+.username{
+color:white;
+border:2px solid green;
+width:200px;
+height:100px;
+border-radius:20px;
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+top:50px;
+left:2vw;
+background:#2b2b2b;
+transition:0.5s;
+}
+
+.username:hover{
+background:#2b2b2b;
+width:210px;
+height:110px;
+}
+
+.username i{
+align-items:center;
+justify-content:center;
+display:flex;
+font-size:50px;
+position:relative;
+left:5px;
+}
+.username a{
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+bottom:10px;
+left:20px;
+}
+
+.username h3{
+align-items:center;
+justify-content:center;
+display:flex;
+top:20px;
+left:-50px;
+position:relative;
+}
+
+.menu{
+position:relative;
+top:50px;
+
+}
+.naw-item{
+border:2px solid #2b2b2b;
+color:white;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+.naw-item-ready{
+border:2px solid #2b2b2b;
+color:green;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+border:2px solid black;
+border-radius:10px;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+
+.naw-item-ready i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item:hover{
+border:2px solid black;
+border-radius:10px;
+color:green;
+}
+
+.header-line{
+height:2px;
+position:relative;
+background:black;
+top:70px;
+}
+
+.app-content{
+position:relative;
+width:80vw;
+left:260px;
+top:-800px;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+.d-card-body{
+background:#2b2b2b;
+}
+
+.orders-btn{
+background:#2b2b2b;
+}
+
+.dropdown-menu{
+height:120px;
+width:200px;
+}
+
+.dropdown-menu a{
+
+}
+
+.dropdown-toggle{
+position:absolute;
+top:30px;
+left:900px;
+}
+
+.dropdown-transperent{
+position:absolute;
+left:900px;
+top:0px;
+}
+
+
+#menu-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+ position:relative;
+ top:-900px;
+ left:250px;
+}
+</style>
+
+<script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer="defer"></script>
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/lsjup49mte5nepob.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/ajlbwitc50c42y7n.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/libs/bootstrap-datetimepicker/4.17.47/bootstrap-datetimepicker.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/css/font-awesome/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/global/29sz1jwqs2y1tscl.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
+
+
+<body>
+<header>
+        <div id="menu" class="menu-hidden">
+<div class="username">
+<i class="fa-solid fa-user"></i>
+     <a>username</a>
+     <h3>0.00$</h3>
+ </div>
+    <div class="header-line"></div>
+<div class="menu">
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-affiliates.html"><i class="fa-solid fa-users"></i>Филиалы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/Account-page.html"><i class="fa-regular fa-clipboard"></i>Новые заказы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-servece.html"><i class="fa-solid fa-tags"></i>Услуги</a>
+<a class="naw-item-ready" href="http://localhost:63342/Index.html/account-page%20orders.html?_ijt=rbuirbrcnpeh86t150voe074lj&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-bag-shopping"></i>Заказы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-funds.html?_ijt=j8cibuih3kjo8cjumdmctg7s01&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-wallet"></i>Пополнить счет</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-tickets.html?_ijt=hsjdvfmmqq6512hgm1p69e2j5g&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-check-to-slot"></i>Квитанции</a>
+</div>
+        </div>
+</header>
+<button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+       <button type="button" class="dropdown-toggle dd-top dd-orange" data-toggle="dropdown">
+                     <i class="fal fa-chevron-circle-down"></i>
+                     </button>
+			 <div class="dropdown-transperent">
+                     <div class="dropdown-menu menu-dd">
+                       <a href="http://localhost:63342/Index.html/account-page-terms-of-use.html" class="dropdown-item">
+                        <i class="fal fa-file-alt mr-2"></i>Условия </a>
+                       <a href="http://localhost:63342/Index.html/Acount-page-main.html" class="dropdown-item">
+                        <i class="fal fa-user mr-2"></i>Аккаунт </a>
+                       <a href="http://localhost:63342/Index.html/index.html?_ijt=2g6mfr0ppajb4eq84cj3488s80&_ij_reload=RELOAD_ON_SAVE" class="dropdown-item">
+                        <i class="fal fa-power-off mr-2"></i>Выйти </a>
+                     </div>
+                  </div>
+
+
+
+ <div id="main" class="app-content">
+			<div class="container-fluid">
+
+				<section class="app-orders">
+                        <div class="row">
+                           <div class="col-lg-12 col-12 mb-5 mb-lg-0">
+
+								<div class="orders-btn py-3">
+								   <ul class="nav nav-pills app-ord-nav">
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/account-page%20orders.html"><i class="fas fa-filter mr-1"></i>Все</a>
+									  </li>
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/acount-page%20order-panding.html"><i class="fas fa-file-import mr-1"></i>Ожидаемый</a>
+									  </li>
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/account-page%20order-in-progres.html?_ijt=nte1rsqu23uohjgrgguju9rgnb&_ij_reload=RELOAD_ON_SAVE"><i class="fas fa-spinner mr-1"></i>В процессе</a>
+									  </li>
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/account-page%20order-completed.html?_ijt=ul8etmndvqm9ni3sit1visvd6s&_ij_reload=RELOAD_ON_SAVE"><i class="far fa-check-circle mr-1"></i>Выполненный</a>
+									  </li>
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/account-page%20order-partial.html?_ijt=vn6r3m9ah5cg0qfl01538il559&_ij_reload=RELOAD_ON_SAVE"><i class="fas fa-hourglass-start mr-1"></i>Частичный</a></li>
+									  <li class="mr-2">
+										 <a  href="http://localhost:63342/Index.html/account-page%20order-processing.html"><i class="fas fa-sort-numeric-down mr-1"></i>Обработка</a>
+									  </li>
+									  <li class="mr-2">
+										 <a class="active" href="http://localhost:63342/Index.html/account-page%20order-canceled.html?_ijt=8ho9ueb64asgjjjtjrkensss52&_ij_reload=RELOAD_ON_SAVE"><i class="fas fa-ban mr-1"></i>Отменённый</a>
+									  </li>
+									  <li class="pull-right search mr-2">
+										<form action="/orders" method="get" id="history-search">
+											<div class="app-ord-search">
+											   <input type="text" name="search" value="" placeholder="Search" class="app-ord-input">
+											   <button type="submit" class="app-ord-submit">
+											   <i class="fas fa-search"></i>
+											   </button>
+											</div>
+										 </form>
+									  </li>
+								   </ul>
+								</div>
+
+						<div class="d-card mt-3">
+
+                        </div>
+			</div>
+
+                        </div>
+                </section>
+            </div>
+ </div>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <script type="text/javascript" src="https://cdn.mypanel.link/libs/jquery/1.12.4/jquery.min.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/y36ux7zr5qki5pqw.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/sa2eqd3a988sw7ft.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/diotd59ww05fccop.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/tq6tyf6s2kgijr9z.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/el4nk521gysp8sw1.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/hukamq9jlwgb9dae.js">
+      </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":3,"auth":1,"live":true,"csrftoken":"XynLbuEN8q64SrHyzHgosRcVbRC_mbBPmXl-awDhe344TYcpgjXCz_Z7-L71SliCJHwFKNfb5HfGFA04SYMcFw=="};   </script>
+  <script type="text/javascript" >
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+
+
+
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const main = document.getElementById('main');
+menuBtn.addEventListener('click', function() {
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    main.style.display = 'block';
+  } else {
+    menu.style.display = 'block';
+    main.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

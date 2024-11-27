@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пополнить счет</title>
+  <link rel="shortcut icon" type="image/ico" href="https://cdn.mypanel.link/7cv4an/e71l3n45y7g1m9i8.ico" />
+    <script src="https://kit.fontawesome.com/edc2caccf4.js" crossorigin="anonymous" defer></script>
+</head>
+<style>
+@media(max-width:1200px) {
+.container{
+max-width:1100px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+
+}
+
+@media(max-width:1000px) {
+.container{
+max-width:900px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-10vw);
+}
+.dropdown-transperent{
+transform:translate(-25vw,-40px);
+}
+
+
+}
+
+@media(max-width:850px) {
+.container{
+max-width:730px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:10vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-30vw);
+}
+.dropdown-transperent{
+transform:translate(-45vw,-40px);
+}
+
+
+}
+
+
+@media(max-width:730px) {
+.container{
+max-width:630px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:7vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-50vw);
+}
+.dropdown-transperent{
+transform:translate(-65vw,-40px);
+}
+
+
+}
+
+@media(max-width:630px) {
+.container{
+max-width:500px;
+}
+
+
+#menu{
+display:none;
+}
+
+html .app-content{
+position:relative;
+left:7vw;
+transform:translateY(-10px);
+height:550px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+html #menu-btn{
+position:relative;
+left:0;
+}
+
+.dropdown-toggle{
+transform:translateX(-90vw);
+}
+.dropdown-transperent{
+transform:translate(-115vw,-40px);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.container{
+
+}
+
+
+html,body{
+background:black;
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+header{
+width:250px;
+height:900px;
+position:relative;
+}
+
+#menu{
+width:250px;
+height:900px;
+background:#2b2b2b;
+position:relative;
+
+}
+
+
+.username{
+color:white;
+border:2px solid green;
+width:200px;
+height:100px;
+border-radius:20px;
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+top:50px;
+left:2vw;
+background:#2b2b2b;
+transition:0.5s;
+}
+
+.username:hover{
+background:#2b2b2b;
+width:210px;
+height:110px;
+}
+
+.username i{
+align-items:center;
+justify-content:center;
+display:flex;
+font-size:50px;
+position:relative;
+left:5px;
+}
+.username a{
+align-items:center;
+justify-content:center;
+display:flex;
+position:relative;
+bottom:10px;
+left:20px;
+}
+
+.username h3{
+align-items:center;
+justify-content:center;
+display:flex;
+top:20px;
+left:-50px;
+position:relative;
+}
+
+.menu{
+position:relative;
+top:50px;
+
+}
+.naw-item{
+border:2px solid #2b2b2b;
+color:white;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+.naw-item-ready{
+border:2px solid #2b2b2b;
+color:green;
+text-decoration:none;
+display:flex;
+flex-direction:line;
+transition:0.5s;
+line-height:2.5em;
+border:2px solid black;
+border-radius:10px;
+position:relative;
+top:50px;
+padding:0px 20px;
+}
+
+.naw-item-ready i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item i{
+color:green;
+position:relative;
+top:10px;
+left:-1vw;
+}
+
+.naw-item:hover{
+border:2px solid black;
+border-radius:10px;
+color:green;
+}
+
+.header-line{
+height:2px;
+position:relative;
+background:black;
+top:70px;
+}
+.app-content{
+position:relative;
+width:80vw;
+left:260px;
+top:-800px;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+.d-card-body{
+background:#2b2b2b;
+}
+.fa-credit-card{
+background:#2b2b2b;
+}
+
+.dropdown-menu{
+height:120px;
+width:200px;
+}
+
+.dropdown-menu a{
+
+}
+
+.dropdown-toggle{
+position:absolute;
+top:30px;
+left:900px;
+}
+
+.dropdown-transperent{
+position:absolute;
+left:900px;
+top:0px;
+}
+
+#menu-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+ position:relative;
+ top:-900px;
+ left:250px;
+}
+
+</style>
+
+<script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer="defer"></script>
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/lsjup49mte5nepob.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/7cv4an/ajlbwitc50c42y7n.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/libs/bootstrap-datetimepicker/4.17.47/bootstrap-datetimepicker.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/css/font-awesome/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.mypanel.link/global/29sz1jwqs2y1tscl.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
+
+
+<body>
+<header>
+    <div id="menu" class="menu-hidden">
+<div class="username">
+<i class="fa-solid fa-user"></i>
+     <a>username</a>
+     <h3>0.00$</h3>
+ </div>
+    <div class="header-line"></div>
+<div  class="menu">
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-affiliates.html"><i class="fa-solid fa-users"></i>Филиалы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/Account-page.html"><i class="fa-regular fa-clipboard"></i>Новые заказы</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-servece.html"><i class="fa-solid fa-tags"></i>Услуги</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/account-page%20orders.html?_ijt=rbuirbrcnpeh86t150voe074lj&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-bag-shopping"></i>Заказы</a>
+<a class="naw-item-ready" href="http://localhost:63342/Index.html/acount-page-funds.html?_ijt=j8cibuih3kjo8cjumdmctg7s01&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-wallet"></i>Пополнить счет</a>
+<a class="naw-item" href="http://localhost:63342/Index.html/acount-page-tickets.html?_ijt=hsjdvfmmqq6512hgm1p69e2j5g&_ij_reload=RELOAD_ON_SAVE"><i class="fa-solid fa-check-to-slot"></i>Квитанции</a>
+</div>
+    </div>
+
+</header>
+<button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+  <button type="button" class="dropdown-toggle dd-top dd-orange" data-toggle="dropdown">
+                     <i class="fal fa-chevron-circle-down"></i>
+                     </button>
+			 <div class="dropdown-transperent">
+                     <div class="dropdown-menu menu-dd">
+                       <a href="http://localhost:63342/Index.html/account-page-terms-of-use.html" class="dropdown-item">
+                        <i class="fal fa-file-alt mr-2"></i>Условия </a>
+                       <a href="http://localhost:63342/Index.html/Acount-page-main.html" class="dropdown-item">
+                        <i class="fal fa-user mr-2"></i>Аккаунт </a>
+                       <a href="http://localhost:63342/Index.html/index.html?_ijt=2g6mfr0ppajb4eq84cj3488s80&_ij_reload=RELOAD_ON_SAVE" class="dropdown-item">
+                        <i class="fal fa-power-off mr-2"></i>Выйти </a>
+                     </div>
+                  </div>
+
+
+<div id="main" class="app-content">
+   <div class="container-fluid">
+
+      <section class="app-addfunds">
+         <div class="row">
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+               <div class="d-card pt-3">
+                  <div class="d-card-head">
+                     <div class="dch-icon">
+                        <i class="fal fa-credit-card"></i>
+                     </div>
+                     Выберите метод оплаты
+                  </div>
+                  <div class="d-card-body">
+                     <form  method="post" action="">
+                                                               <div class="row">
+                        <div class="col-lg-12">
+                           <div class="form-group">
+                              <label>Метод оплаты</label>
+                              <select class="form-control" id="method" name="AddFoundsForm[type]" id="order_type">
+                                                            <option value="50579">Кредитная/Дебетовая карта- Visa/Master (5% БОНУС)</option>
+                                                            <option value="48546">Криптовалюта | Coinbase (5% Бонус)</option>
+                                                            <option value="54902">Amex (5% Бонус)</option>
+                                                            </select>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="form-group">
+                              <label>Сумма</label>
+                              <input type="number" class="form-control"  name="AddFoundsForm[amount]" id="amount">
+                           </div>
+                        </div>
+                                             </div>
+
+                     <input type="hidden" name="_csrf" value="ouInfd5Bz5zwS2nmF28AvvD1tyaVwx8IlM_HrFWsgZDao2kEuXGKrscpPolcOjGLnaH2EPmJSj2srInGOum0wA==">
+                     <button class="btn btn-primary btn-block mt-3" type="submit">Оплата</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+               <div class="d-card pt-3">
+                  <div class="d-card-head">
+                     <div class="dch-icon">
+                        <i class="fal fa-history"></i>
+                     </div>
+                     Последний платеж
+                  </div>
+                  <div class="d-card-body" id="dc-body">
+                                       </div>
+               </div>
+            </div>
+                     </div>
+
+      </section>
+   </div>
+</div>
+
+
+<script type="text/javascript" >
+     window.modules.layouts = {"theme_id":3,"auth":1,"live":true,"csrftoken":"ouInfd5Bz5zwS2nmF28AvvD1tyaVwx8IlM_HrFWsgZDao2kEuXGKrscpPolcOjGLnaH2EPmJSj2srInGOum0wA=="};   </script>
+  <script type="text/javascript" >
+     window.modules.siteAddfunds = {"format":{"min_price":0.0001,"max":7,"min":2,"delimiter":".","thousands":""},"fieldOptions":{"50579":{"commission":{"is_enabled":0,"fixed":0,"percent":0,"extrafee":"Extra fee","total":"Total"},"country":{"label":"Country","type":"select","name":"country","value":"","options":{"AF":"Afghanistan","AX":"Aland Islands","AL":"Albania","DZ":"Algeria","AS":"American Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua And Barbuda","AR":"Argentina","AM":"Armenia","AW":"Aruba","AU":"Australia","AT":"Austria","AZ":"Azerbaijan","BS":"Bahamas","BH":"Bahrain","BD":"Bangladesh","BB":"Barbados","BY":"Belarus","BE":"Belgium","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BA":"Bosnia And Herzegovina","BW":"Botswana","BV":"Bouvet Island","BR":"Brazil","IO":"British Indian Ocean Territory","BN":"Brunei Darussalam","BG":"Bulgaria","BF":"Burkina Faso","BI":"Burundi","KH":"Cambodia","CM":"Cameroon","CA":"Canada","CV":"Cape Verde","KY":"Cayman Islands","CF":"Central African Republic","TD":"Chad","CL":"Chile","CN":"China","CX":"Christmas Island","CC":"Cocos (Keeling) Islands","CO":"Colombia","KM":"Comoros","CG":"Congo","CD":"Congo, Democratic Republic","CK":"Cook Islands","CR":"Costa Rica","CI":"Cote D'Ivoire","HR":"Croatia","CU":"Cuba","CY":"Cyprus","CZ":"Czech Republic","DK":"Denmark","DJ":"Djibouti","DM":"Dominica","DO":"Dominican Republic","EC":"Ecuador","EG":"Egypt","SV":"El Salvador","GQ":"Equatorial Guinea","ER":"Eritrea","EE":"Estonia","ET":"Ethiopia","FK":"Falkland Islands (Malvinas)","FO":"Faroe Islands","FJ":"Fiji","FI":"Finland","FR":"France","GF":"French Guiana","PF":"French Polynesia","TF":"French Southern Territories","GA":"Gabon","GM":"Gambia","GE":"Georgia","DE":"Germany","GH":"Ghana","GI":"Gibraltar","GR":"Greece","GL":"Greenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinea","GW":"Guinea-Bissau","GY":"Guyana","HT":"Haiti","HM":"Heard Island & Mcdonald Islands","VA":"Holy See (Vatican City State)","HN":"Honduras","HK":"Hong Kong","HU":"Hungary","IS":"Iceland","IN":"India","ID":"Indonesia","IR":"Iran, Islamic Republic Of","IQ":"Iraq","IE":"Ireland","IM":"Isle Of Man","IL":"Israel","IT":"Italy","JM":"Jamaica","JP":"Japan","JE":"Jersey","JO":"Jordan","KZ":"Kazakhstan","KE":"Kenya","KI":"Kiribati","KR":"Korea","KW":"Kuwait","KG":"Kyrgyzstan","LA":"Lao People's Democratic Republic","LV":"Latvia","LB":"Lebanon","LS":"Lesotho","LR":"Liberia","LY":"Libyan Arab Jamahiriya","LI":"Liechtenstein","LT":"Lithuania","LU":"Luxembourg","MO":"Macao","MK":"Macedonia","MG":"Madagascar","MW":"Malawi","MY":"Malaysia","MV":"Maldives","ML":"Mali","MT":"Malta","MH":"Marshall Islands","MQ":"Martinique","MR":"Mauritania","MU":"Mauritius","YT":"Mayotte","MX":"Mexico","FM":"Micronesia, Federated States Of","MD":"Moldova","MC":"Monaco","MN":"Mongolia","ME":"Montenegro","MS":"Montserrat","MA":"Morocco","MZ":"Mozambique","MM":"Myanmar","NA":"Namibia","NR":"Nauru","NP":"Nepal","NL":"Netherlands","AN":"Netherlands Antilles","NC":"New Caledonia","NZ":"New Zealand","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk Island","MP":"Northern Mariana Islands","NO":"Norway","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestinian Territory, Occupied","PA":"Panama","PG":"Papua New Guinea","PY":"Paraguay","PE":"Peru","PH":"Philippines","PN":"Pitcairn","PL":"Poland","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"Reunion","RO":"Romania","RU":"Russian Federation","RW":"Rwanda","BL":"Saint Barthelemy","SH":"Saint Helena","KN":"Saint Kitts And Nevis","LC":"Saint Lucia","MF":"Saint Martin","PM":"Saint Pierre And Miquelon","VC":"Saint Vincent And Grenadines","WS":"Samoa","SM":"San Marino","ST":"Sao Tome And Principe","SA":"Saudi Arabia","SN":"Senegal","RS":"Serbia","SC":"Seychelles","SL":"Sierra Leone","SG":"Singapore","SK":"Slovakia","SI":"Slovenia","SB":"Solomon Islands","SO":"Somalia","ZA":"South Africa","GS":"South Georgia And Sandwich Isl.","ES":"Spain","LK":"Sri Lanka","SD":"Sudan","SR":"Suriname","SJ":"Svalbard And Jan Mayen","SZ":"Swaziland","SE":"Sweden","CH":"Switzerland","SY":"Syrian Arab Republic","TW":"Taiwan","TJ":"Tajikistan","TZ":"Tanzania","TH":"Thailand","TL":"Timor-Leste","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad And Tobago","TN":"Tunisia","TR":"Turkey","TM":"Turkmenistan","TC":"Turks And Caicos Islands","TV":"Tuvalu","UG":"Uganda","UA":"Ukraine","AE":"United Arab Emirates","GB":"United Kingdom","US":"United States","UM":"United States Outlying Islands","UY":"Uruguay","UZ":"Uzbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Viet Nam","VG":"Virgin Islands, British","VI":"Virgin Islands, U.S.","WF":"Wallis And Futuna","EH":"Western Sahara","YE":"Yemen","ZM":"Zambia","ZW":"Zimbabwe"},"rules":[{"0":"country","1":"required","message":"addfunds.error.country_code"},{"0":"country","1":"string","message":"addfunds.error.country_code"}],"texts":[]},"instruction":{"label":"Instruction","name":"instruction","type":"container","value":"<p>Accepting VISA, MasterCard, Amex, VISA Debit, VPay, Maestro&nbsp;&amp; more options!<\/p>","texts":[]}},"48546":{"commission":{"is_enabled":0,"fixed":0,"percent":0,"extrafee":"Extra fee","total":"Total"},"instruction":{"label":"Instruction","name":"instruction","type":"container","value":"","texts":[]}},"54902":{"commission":{"is_enabled":0,"fixed":0,"percent":0,"extrafee":"Extra fee","total":"Total"},"instruction":{"label":"Instruction","name":"instruction","type":"container","value":"<p>Paymentlink:&nbsp;<a href=\"https:\/\/pay.vivawallet.com\/thetopfame\" target=\"_blank\" style=\"background-color: rgb(46, 48, 53); color: rgb(18, 132, 255); outline: none;\">https:\/\/pay.vivawallet.com\/thetopfame<\/a><br>You can view the conversion rate of USD to SEK on Google<br>This payment method provides also 5% Bonus.<br>Once payment is done, kindly notify us on ticket so we can add balance.<br><\/p>","texts":[]}}},"amountOptions":[],"amountCurrencyOptions":[],"options":{"manual_243":{"code":"manual_243","type":54902}}};   </script>
+  <script type="text/javascript" >
+      </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <script type="text/javascript" src="https://cdn.mypanel.link/libs/jquery/1.12.4/jquery.min.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/y36ux7zr5qki5pqw.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/sa2eqd3a988sw7ft.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/diotd59ww05fccop.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/tq6tyf6s2kgijr9z.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/el4nk521gysp8sw1.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/7cv4an/hukamq9jlwgb9dae.js">
+      </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":3,"auth":1,"live":true,"csrftoken":"XynLbuEN8q64SrHyzHgosRcVbRC_mbBPmXl-awDhe344TYcpgjXCz_Z7-L71SliCJHwFKNfb5HfGFA04SYMcFw=="};   </script>
+  <script type="text/javascript" >
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const main = document.getElementById('main');
+menuBtn.addEventListener('click', function() {
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    main.style.display = 'block';
+  } else {
+    menu.style.display = 'block';
+    main.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

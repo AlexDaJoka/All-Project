@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <meta name="viewport" content="wight=device-wight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Ivanov Andrei</title>
+    <script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="/libs/gsap/ScrollSmoother.min.js" defer ></script>
+    <script src="/libs/gsap/gsap.min.js" defer></script>
+    <script src="/js2/app-3.js" defer></script>
+    <script src="/js2/anime.min2.js" defer></script>
+    <script src="/js2/gsap.min2.js" defer></script>
+</head>
+<style>
+
+/* will-change */
+.content, .header, .container, .body{
+will-change:transform;
+}
+
+@media(max-width:1150px) {
+.container{
+max-width:1000px;
+}
+.menu{
+min-width:100px;
+transform:translate(10%, -40px);
+}
+
+.menu .naw-item{
+min-width:290px;
+transform:translate(-10%, 30px);
+}
+
+
+.menu .naw-item img{
+min-width:0px;
+transform:translate(-10px, 0px);
+}
+.menu .naw-item1{
+min-width:190px;
+transform:translate(-50%, 30px);
+}
+
+.menu .naw-item1 img{
+min-width:0px;
+transform:translate(-10px, 0px);
+}
+.text h1{
+transform:translate(3vw, 0px);
+}
+.text a{
+transform:translate(-12vw, 0px);
+min-width:1000px;
+}
+
+.perfect .make{
+}
+
+.background{
+min-height:1100px;
+max-width:1000px;
+}
+.background3{
+min-height:1500px;
+max-width:1000px;
+}
+
+
+.card{
+
+}
+
+
+.card-position1{
+position:absolute;
+left:7vw;
+right:10px;
+top:1300px;
+}
+
+.card-position2{
+position:absolute;
+top:1640px;
+margin:0px 80px;
+right:10px;
+}
+
+.card-position3{
+position:absolute;
+right:10px;
+left:7vw;
+top:1280px;
+}
+
+.card-position4{
+position:absolute;
+top:2360px;
+margin:0px 80px;
+right:10px;
+}
+
+.card-position5{
+position:absolute;
+top:1300px;
+margin:0px 17px;
+left:10px;
+}
+
+.card-position6{
+
+}
+
+.card-image1{
+
+}
+
+.text2{
+transform:translate(0px, -110px);
+}
+
+.contact{
+transform:translate(0px, -100px);
+}
+
+
+}
+
+
+
+
+@media(max-width:1150px) {
+.container{
+max-width:950px;
+}
+
+.menu{
+min-width:120px;
+transform:translate(10%, -40px);
+}
+
+.menu .naw-item{
+min-width:290px;
+transform:translate(-80%, 30px);
+}
+.menu .naw-item1{
+min-width:290px;
+transform:translate(-50%, 30px);
+}
+
+.menu .naw-item img{
+min-width:0px;
+transform:translate(-20%, 0px);
+}
+.menu .naw-item1{
+
+}
+
+.text h1{
+transform:translate(1vw, 0px);
+}
+.text a{
+transform:translate(-14vw, 0px);
+min-width:900px;
+}
+
+.background{
+min-height:1700px;
+max-width:950px;
+}
+.background3{
+min-height:1100px;
+max-width:950px;
+}
+
+
+
+
+.card-position1{
+position:absolute;
+left:10vw;
+top:1300px;
+margin:10vh 0vw;
+}
+.card-position2{
+position:absolute;
+right:20px;
+top:1690px;
+margin:10vh 26vw;
+}
+
+.card-position3{
+position:absolute;
+left:80px;
+top:1350px;
+margin:10vh 2vw;
+}
+.card-position4{
+position:absolute;
+left:80px;
+top:2430px;
+margin:10vh 26vw;
+}
+
+.card-position5{
+display:none;
+position:absolute;
+top:2430px;
+}
+
+.container .card2{
+display:flex;
+}
+
+.container .card-position6{
+position:absolute;
+top:2100px;
+margin:15vh 0vw;
+left:250px;
+}
+.card-image1{
+min-width:250px;
+}
+.card-image2{
+min-width:250px;
+}
+.card-image3{
+min-width:250px;
+}
+.card-image4{
+min-width:250px;
+}
+.card-image6{
+min-width:250px;
+}
+
+.text2{
+transform:translate(0px, -110px);
+}
+
+.contact{
+transform:translate(0px, -100px);
+}
+
+
+}
+
+
+
+
+@media(max-width:950px) {
+.container{
+max-width:800px;
+
+}
+
+.menu{
+min-width:0px;
+transform:translate(-10px, -60px);
+}
+.header img{
+transform:translate(-20px, 0px);
+max-width:300px;
+}
+
+.menu .naw-item{
+min-width:290px;
+transform:translate(-30%, 30px);
+}
+
+
+.menu .naw-item img{
+min-width:0px;
+transform:translate(-10px, 0px);
+}
+.menu .naw-item1{
+display:none;
+}
+
+.text h1{
+transform:translate(-3vw, 0px);
+}
+.text a{
+transform:translate(-20vw, 0px);
+min-width:800px;
+}
+
+.background{
+min-height:2400px;
+max-width:800px;
+}
+
+.background3{
+min-height:1200px;
+max-width:800px;
+}
+
+
+.card-position1{
+position:absolute;
+left:100px;
+top:1450px;
+margin:20vh 10vw;
+}
+.card-position2{
+position:absolute;
+right:100px;
+left:-260px;
+top:2150px;
+margin:80vh -8vw;
+}
+
+.card-position3{
+position:absolute;
+left:80px;
+top:1800px;
+margin:73vh 12.5vw;
+}
+.card-position4{
+position:absolute;
+left:-260px;
+top:3250px;
+margin:130vh -8vw;
+}
+
+.card-position5{
+display:none;
+position:absolute;
+top:2430px;
+}
+
+.container .card2{
+display:flex;
+}
+
+.container .card-position6{
+position:absolute;
+top:3100px;
+left:70px;
+margin:-20vh 0vw;
+}
+.card-image1{
+min-width:250px;
+}
+.card-image2{
+min-width:250px;
+}
+.card-image3{
+min-width:250px;
+}
+.card-image4{
+min-width:250px;
+}
+.card-image6{
+min-width:250px;
+}
+
+.text2{
+transform:translate(0px, -110px);
+margin:0px 60px;
+}
+
+.contact{
+transform:translate(0px, -80px);
+margin:0px -80px;
+}
+
+
+.open{
+display:flex !important;
+}
+}
+
+
+
+@media(max-width:800px) {
+.container{
+max-width:700px;
+
+}
+
+.menu{
+min-width:0px;
+transform:translate(-10px, -60px);
+}
+.header img{
+transform:translate(-20px, 0px);
+max-width:300px;
+}
+
+.menu .naw-item{
+min-width:290px;
+transform:translate(-30%, 30px);
+}
+
+.menu .naw-item img{
+min-width:0px;
+transform:translate(-10px, 0px);
+}
+.menu .naw-item1{
+display:none;
+}
+
+.text h1{
+transform:translate(0vw, 0px);
+}
+.text a{
+transform:translate(-30vw, 0px);
+min-width:800px;
+}
+
+.background{
+min-height:2400px;
+max-width:700px;
+}
+.background3{
+min-height:1300px;
+max-width:700px;
+}
+
+
+
+
+.card-position1{
+position:absolute;
+left:100px;
+top:1450px;
+margin:20vh 14vw;
+}
+.card-position2{
+position:absolute;
+right:100px;
+left:-260px;
+top:2150px;
+margin:80vh -2vw;
+}
+
+.card-position3{
+position:absolute;
+left:80px;
+top:1800px;
+margin:73vh 17vw;
+}
+.card-position4{
+position:absolute;
+left:-260px;
+top:3250px;
+margin:130vh -2vw;
+}
+
+.card-position5{
+display:none;
+position:absolute;
+top:2430px;
+}
+
+.container .card2{
+display:flex;
+}
+
+.container .card-position6{
+position:absolute;
+top:3100px;
+left:17vw;
+}
+
+.text2{
+transform:translate(0px, -100px);
+margin:0px 10px;
+}
+
+.contact{
+transform:translate(0px, -80px);
+margin:0px -80px;
+}
+
+
+.open{
+display:flex !important;
+}
+}
+
+
+
+@media(max-width:700px) {
+.container{
+max-width:500px;
+
+}
+
+.menu{
+min-width:0px;
+transform:translate(-10px, -60px);
+}
+.header img{
+transform:translate(-20px, 0px);
+max-width:300px;
+}
+
+.menu .naw-item{
+min-width:290px;
+transform:translate(-45%, 30px);
+}
+
+
+.menu .naw-item img{
+min-width:0px;
+transform:translate(-10px, 0px);
+}
+.menu .naw-item1{
+display:none;
+}
+
+.text h1{
+transform:translate(0vw, 0px);
+}
+.text a{
+transform:translate(-62vw, 0px);
+min-width:800px;
+}
+
+.background{
+min-height:2500px;
+max-width:500px;
+}
+.background3{
+min-height:1900px;
+max-width:500px;
+}
+
+
+
+
+.card-position1{
+position:absolute;
+left:100px;
+top:1450px;
+margin:20vh 5vw;
+}
+.card-position2{
+position:absolute;
+right:100px;
+left:-260px;
+top:2150px;
+margin:80vh -5vw;
+}
+
+.card-position3{
+position:absolute;
+left:80px;
+top:1800px;
+margin:80vh 9vw;
+}
+.card-position4{
+position:absolute;
+left:-260px;
+top:3250px;
+margin:135vh -5vw;
+}
+
+.card-position5{
+display:none;
+position:absolute;
+top:2430px;
+}
+
+.container .card2{
+display:flex;
+}
+
+.container .card-position6{
+position:absolute;
+top:3100px;
+left:9vw;
+}
+
+.text2{
+transform:translate(0px, -100px);
+margin:0px 10px;
+}
+
+.contact{
+transform:translate(0px, -80px);
+margin:0px -80px;
+}
+
+.why{
+
+}
+
+
+.open{
+display:flex !important;
+}
+}
+
+
+
+
+:root{
+--index:calc(1vw+1vh);
+}
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.container{
+max-wight:1200px;
+margin:0px auto;
+}
+
+.body{
+
+overflow-x:hidden;
+object-fit:cover;
+background-repeat:no-repeat;
+width:100vw;
+right:0;
+left:0;
+height:100vh;
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+}
+
+.header{
+margin:30px 10px;
+display:flex;
+}
+.menu{
+margin:40px 55px;
+display:flex;
+justify-content: space-around;
+}
+.naw-item {
+position:relative;
+left:30vw;
+font-size:30px;
+-webkit-text-stroke:0.5px black;
+color:transparent;
+}
+
+.naw-item1{
+position:relative;
+left:13vw;
+font-size:30px;
+-webkit-text-stroke:0.5px black;
+color:transparent;
+}
+
+
+.background-image{
+background-image:url(/InterCode/image-14.png);
+height:100vh;
+width:100%;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+filter: grayscale(80%);
+}
+
+
+
+.perfect{
+line-height:1.5em;
+position:relative;
+
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:calc(var(--index)*9);
+}
+.make{
+color:white;
+}
+
+.text{
+margin:0px 170px;
+}
+
+
+.background{
+background-color:#DCDCDC;
+width:100vw;
+height:180vh;
+}
+
+.text a{
+font-size:25px;
+display:flex;
+text-align:center;
+box-sizing:border-box;
+justify-content:space-around;
+object-fit:cover;
+margin:100px 0px;
+padding:0px 200px;
+}
+.text h1{
+font-size:40px;
+padding-top:50px;
+display:flex;
+text-align:center;
+box-sizing: border-box;
+justify-content: space-around;
+object-fit:cover;
+}
+
+
+.cards holder{
+flex-wrap: wrap;
+display-radius:inline-block;
+}
+
+.card {
+background-color:white;
+width:10%;
+margin-bottom:10vh;
+overflow:hidden;
+z-index:999;
+padding:100px 150px;
+border: 1px solid #ccc;
+border-radius:10px;
+}
+
+.card2{
+display:none;
+background-color:white;
+width:10%;
+margin-bottom:10px;
+margin:-150px 80px;
+overflow: hidden;
+z-index:999;
+padding:100px 150px;
+border: 1px solid #ccc;
+border-radius:10px;
+}
+
+
+.about{
+margin:-90px -120px;
+  flex-wrap: wrap;
+  color:orange;
+-webkit-text-stroke:0.7px orange;
+
+}
+
+.about2{
+  flex-wrap: wrap;
+margin:-90px -120px;
+color:orange;
+-webkit-text-stroke:0.7px orange;
+}
+
+.card-image1{
+background-image:url('/InterCode/photo/photo_2004.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+
+.card-image2{
+background-image:url('/InterCode/photo/photo_2003.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+.card-image3{
+background-image:url('/InterCode/photo/photo_2001.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+.card-image4{
+background-image:url('/InterCode/photo/photo_2002.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+
+.card-image5{
+background-image:url('/InterCode/photo/photo_2000.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+.card-image6{
+background-image:url('/InterCode/photo/photo_2000.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+border:10px solid black;
+height:50vh;
+width:20vw;
+position:relative;
+z-index:-1;
+}
+
+.card-position1{
+position:absolute;
+top:180vh;
+height:70vh;
+}
+
+.card-position2{
+position:absolute;
+left:30vw;
+top:180vh;
+height:70vh;
+}
+
+.card-position3{
+position:absolute;
+top:240vh;
+
+}
+.card-position4{
+position:absolute;
+left:30vw;
+top:240vh;
+}
+
+.card-position5{
+position:absolute;
+left:66vw;
+top:200vh;
+height:170vh;
+}
+.card-position6{
+position:absolute;
+
+}
+
+.opener{
+transition: opacity 2.5s ease-in-out;
+opacity: 0;
+flex-wrap: wrap;
+justify-content:space-around;
+}
+.opener.show{
+opacity:1;
+}
+
+
+
+
+.background2{
+transition: opacity 2s ease-in-out;
+opacity: 0;
+}
+.background2.show{
+opacity:1;
+}
+
+
+.background2{
+width:100vw;
+transition: opacity 2s ease-in-out;
+opacity: 0;
+}
+.background2.show{
+opacity:1;
+}
+
+
+.text2-line{
+border-bottom: 2px solid black;
+margin:0px 550px;
+transform:translate(0%, 170px);
+}
+
+.text2 h1{
+padding-top:100px;
+margin:20px 0px;
+text-align:center;
+box-sizing: border-box;
+justify-content: space-around;
+object-fit:cover;
+}
+.why{
+margin:40px 50px;
+display:flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.why-1{
+position:relative;
+overflow: hidden;
+width:30%;
+margin-bottom: 40px;
+}
+.why-1 a{
+width:var(--index);
+}
+
+.contact{
+transition: opacity 2s ease-in-out;
+opacity: 0;
+}
+.contact.show{
+opacity:1;
+}
+
+.contact h1{
+padding-top:100px;
+margin:20px 0px;
+text-align:center;
+box-sizing: border-box;
+justify-content: space-around;
+object-fit:cover;
+}
+
+.contact-line{
+border-bottom: 2px solid black;
+margin:0px 550px;
+}
+.information-top{
+margin:40px 200px;
+display:flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.information{
+font-size:20px;
+position:relative;
+overflow: hidden;
+width:var(--index);
+margin-bottom: 40px;
+}
+
+.background3{
+background-color:#DCDCDC;
+width:100vw;
+height:140vh;
+}
+
+.opener2{
+transition: opacity 3s ease-in-out;
+opacity: 0;
+}
+.opener2.show{
+opacity:1;
+}
+
+.text-why{
+line-height:2em;
+position:relative;
+padding:0px 50px;
+font-size:22px;
+display:flex;
+}
+
+.why-container{
+border:2px solid black;
+}
+
+
+.footer{
+background-color:black;
+padding:30px;
+width:100vw;
+position:relative;
+}
+.footer a{
+align-items:center;
+justify-content:center;
+display:flex;
+color:white;
+font-size:20px;
+}
+</style>
+<body class="body">
+<div class="container">
+    <div class="content">
+<header class="header">
+    <h1><img src="/js2/photo_Andrei-ivanov.jpeg"></h1>
+    <div class="menu">
+     <a class="naw-item1"><img src="https://b5.static.userimages.ru/img/a/d/2/fa652a882deace98c4fb42a741cc1.png">sog1000@yandex.ru</a>
+        <a class="naw-item"><img src="https://b6.static.userimages.ru/img/e/4/0/4bdbfb8ab3704dd626520833b16e6.png">+7 905 895 95 95</a>
+    </div>
+
+
+</header>
+<div class="background-image">
+    <img src="">
+    <div class="perfect">
+        <a class="make">Разработка ПО<br>
+        Поддержка ПО<br>
+            Доработка ПО
+        </a>
+    </div>
+</div>
+
+
+<div class="background">
+<div class="text">
+    <h1>IT-инфраструктура для бизнеса</h1>
+
+<a>Эффективные и успешные решения, внедрения их в разные сферы бизнеса.
+Работаем с ИП, небольшими компаниями и крупными корпорациями.
+Готовы сотрудничать с клиентами из разных стран.</a>
+</div>
+    <div class="opener">
+        <div class="cards holder">
+            <div class="card-position1">
+<div class="card">
+    <div class="about">
+                <div class="card-image1">
+  <h2>УСЛУГИ РАЗРАБОТКИ DESKTOP ПРИЛОЖЕНИЙ</h2>
+        </div>
+</div>
+</div>
+ </div>
+
+            <div class="card-position2">
+     <div class="card">
+         <div class="about">
+              <div class="card-image2">
+    <h2>УСЛУГИ РАЗРАБОТКИ ВЕБ ПРИЛОЖЕНИЙ</h2>
+              </div>
+</div>
+</div>
+</div>
+ </div>
+
+         <div class="card-position3">
+    <div class="card">
+    <div class="about">
+        <div class="card-image3">
+  <h2>РАЗРАБОТКА МОБИЛЬНЫХ ПРИЛОЖЕНИЙ</h2>
+        </div>
+ </div>
+</div>
+</div>
+
+     <div class="card-position4">
+     <div class="card">
+    <div class="about">
+        <div class="card-image4">
+  <h2>РАЗРАБОТКА ОБЛАЧНЫХ СЕРВИСОВ</h2>
+        </div>
+    </div>
+          </div>
+    </div>
+
+        <div class="card-position5">
+     <div class="card">
+    <div class="about">
+        <div class="card-image5">
+  <h2>РАЗРАБОТКА ВСТРОЕННОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</h2>
+        </div>
+    </div>
+
+          </div>
+    </div>
+
+<div class="card-position6">
+     <div class="card2">
+    <div class="about2">
+        <div class="card-image6">
+  <h2>РАЗРАБОТКА ВСТРОЕННОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</h2>
+        </div>
+    </div>
+
+          </div>
+    </div>
+ </div>
+    </div>
+
+
+
+
+
+<div class="background2">
+<div class="text2">
+    <div class="text2-line">
+        </div>
+    <h1>Чем занимается наша компания</h1>
+    <div class="why">
+        <div class="why-1">
+<img src="https://b3.static.userimages.ru/img/8/e/f/3490e3af1bd114b1a60ecee1938ac.png"><h3>Разработка ПО на заказ для любых платформ и устройств</h3>
+        <a>Отвечаем за процесс проектирования, создания, тестирования программных приложений и систем. Создаём программные инструменты для создания пользовательских приложений или систем на разных языках программирования, которые отвечают конкретным потребностям и требованиям бизнеса или организации.</a>
+</div>
+        <div class="why-1">
+        <img src="https://b4.static.userimages.ru/img/8/1/7/f0bbdba39f43be33cc9000e5765bc.png"><h3>Разработка ПО для управления складом и логистикой</h3>
+            <a>Мы создаем программное обеспечение для управления работой склада разных типов. Это может быть отдельный модуль, входящий в состав ERP-системы или самостоятельная WMS, функционал которой предназначен управлять работой склада.
+Для малых организаций с небольшим товарооборотом мы чаще всего используем WMS начального уровня, в которой присутствуют основные процессы: приемка, размещение, отбор, отгрузка. Это помогает нам навести порядок на вашем складе и организовать систему адресного хранения.</a>
+</div>
+            <div class="why-1">
+       <img src="https://b4.static.userimages.ru/img/7/e/4/75c21bd3e6e0e4c6fe390642fd7a9.png"><h3>Разработка ПО для автоматизации бизнес-процессов</h3>
+        <a>Решаем рутинные задачи сотрудников автоматизированными системами, который позволяют освобождать ресурсы, своевременно реагировать на изменения рынка, быстро принимать решения и распланировать дальнейшие действия компании.</a>
+            </div>
+        <div class="why-1">
+        <img src="https://b4.static.userimages.ru/img/2/2/b/fbfbaee333ef184422d3ad385477b.png"><h3>Разработка ПО для управления производственными процессами</h3>
+        <a>Создаём специализированное прикладное программное обеспечение, предназначенное для решения задач синхронизации, координации, анализа и оптимизации выпуска продукции в рамках какого-либо производства.</a>
+        </div>
+        <div class="why-1">
+        <img src="https://b3.static.userimages.ru/img/f/a/4/b9f0b6f26ff5a5567f5585dbcbf5e.png"><h3> Разработка ПО для автоматизации бухгалтерского учета</h3>
+        <a>Создаем программные средства, который позволяют вести непрерывное фиксирование и анализ данных для получения количественной экономической информации о деятельности предпринимательских и иных организаций.</a>
+        </div>
+        <div class="why-1">
+        <img src="https://b5.static.userimages.ru/img/3/3/b/ccbf440309506cbb245ccf90199ec.png"><h3> Разработка ПО для управления проектами и задачами</h3>
+            <a>Создаём технологические методы и инструменты, которые поддерживают управление проектами в компании и помогают повысить эффективность их реализации. </a>
+        </div>
+        </div>
+
+</div>
+
+</div>
+
+    <div class="background3">
+
+                <div class="opener2">
+    <div class="text2">
+        <div class="text2-line"></div>
+        <h1>Почему вам стоит выбрать нас</h1>
+    </div>
+        <div class="text-why">
+            <div class="why-container">
+            <a>
+            1. Наша компания имеет богатый опыт в разработке ПО и мы всегда идем в ногу со временем.<br>
+2. Мы работаем только с высококвалифицированными специалистами, что позволяет нам достигать лучших результатов в разработке ПО.<br>
+3. Наша компания готова решать любые сложные задачи в области разработки ПО, независимо от их объема и сложности.<br>
+4. Мы используем только самые современные технологии и инструменты в разработке ПО, что позволяет нам создавать продукты высокого качества.<br>
+5. Наша компания имеет высокую степень ответственности и всегда соблюдает сроки выполнения проектов.<br>
+6. Мы гарантируем нашим клиентам полную конфиденциальность и безопасность их данных.<br>
+7. Наша компания предлагает гибкие условия сотрудничества, включая индивидуальный подход к каждому клиенту.<br>
+8. Мы всегда стремимся предложить нашим клиентам наилучшие решения и оптимизировать работу их бизнеса.<br>
+9. Наша компания имеет высокую репутацию в сфере разработки ПО и наши клиенты всегда остаются довольны результатами нашей работы.<br>
+10. Мы предоставляем нашим клиентам полный спектр услуг в разработке ПО, начиная от консультации и заканчивая поддержкой после запуска продукта.</a>
+        </div>
+</div>
+
+        </div>
+         </div>
+
+<div class="contact">
+    <h1>Контакты</h1>
+    <div class="contact-line"></div>
+    <div class="information-top">
+
+    <div class="information">
+  <img src="https://b5.static.userimages.ru/img/e/4/0/4bdbfb8ab3704dd626520833b16e6.png"><a> Телефон:
++7 905 895 95 95</a>
+    </div>
+    <div class="information">
+ <img src="https://b3.static.userimages.ru/img/a/d/2/fa652a882deace98c4fb42a741cc1.png"><a>E-mail:
+sog1000@yandex.ru</a>
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+
+<a>
+Все права защищены © 2020 - ИП Иванов Андрей | ИНН 561502790194
+</a>
+
+</footer>
+
+</div>
+</div>
+
+<script>
+       window.addEventListener('scroll', function() {
+  var element = document.querySelector('.opener');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (position < windowHeight) {
+    element.classList.add('show');
+  }
+});
+
+</script>
+<script>
+           window.addEventListener('scroll', function() {
+  var element = document.querySelector('.background2');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (position < windowHeight) {
+    element.classList.add('show');
+  }
+});
+</script>
+<script>
+          window.addEventListener('scroll', function() {
+  var element = document.querySelector('.contact');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (position < windowHeight) {
+    element.classList.add('show');
+  }
+});
+</script>
+    <script>
+           window.addEventListener('scroll', function() {
+  var element = document.querySelector('.opener2');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (position < windowHeight) {
+    element.classList.add('show');
+  }
+});
+</script>
+</body>
+</html>
